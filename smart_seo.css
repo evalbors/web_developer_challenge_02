@@ -114,9 +114,9 @@ main{
 }
 
 button{
-    width: 228px;
+    min-width: 228px;
     padding: 18px 25px 18px 25px;
-    margin: 24px 0 0 24px;
+    margin: 0 24px 0 24px;
     background-image: linear-gradient(to bottom right, #F76B1C, #FAD961);
     border-radius: 60px;
     font-family: 'Open Sans', sans-serif;
