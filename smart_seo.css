@@ -19,9 +19,13 @@ time, mark, audio, video {
   background:transparent;
 }
 
-
-h1, h2, h3, p { 
-    font-family: 'Open Sans', sans-serif;
+body{
+    position: static;
+    background-image: url("images/Background_image_edited.png");
+    background-repeat: no-repeat;
+    background-size: 100% 594px;
+    font-family: 'Work Sans', sans-serif;
+    ;
 }
 
 h1{
@@ -32,36 +36,36 @@ h2{
     font-size: 40px;
 }
 
-.title  {
-    color: white;
-    margin: 264px 0px 0px 103px;
-    position: absolute;
+h3 {
+    font-size: 27px;
+    color: #4A4A4A; 
+    font-weight: 400;   
 }
 
-.title h1 {
-    font-weight: 700;
+.bold {
+    font-weight: 600;   
 }
 
-.title p {
-    font-weight: 500;
+p {
+   color: #4A4A4A;
+   font-size: 18px;
+   line-height: 28px;
+   letter-spacing: 1.2px;
+   font-weight: 400;
 }
-
 header {
-    width: 100%;
-    height:130px;
     z-index: 2;
-    position: absolute;
+    padding: 60px 115px 40px 115px;
 }
 
 #logo{
-    margin-top: 54px;
-    margin-left: 115px;
+    display: inline;
 }
 
 nav {
     width: auto;
     float: right;
-    height: 130px;
+    padding-top: 0;
 }
 
 ul {
@@ -70,23 +74,191 @@ ul {
 
 li{
     display: inline-block;
-    margin: 0px 13px 0px 13px;
+    margin: 0px 0px 0px 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: white;
 }
 
-.line-separate{
+.line_separate{
     opacity: 0.42;
     border: solid 1px white;
-}
-
-.back_image_top{
-    background-image: url("images/Background_image_edited.png");
     width: 100%;
-    height:594px;
-    margin-top:0px;
-    z-index: -1;
-    position: absolute; 
 }
 
 main{
-    z-index: 1;
+    z-index: 2;
+}
+
+.container_title  {
+    color: white;
+    height: 440px;
+    z-index: 2;
+}
+
+.title {
+    padding-top: 138px;
+    padding-left: 103px;
+    padding-right: 103px;
+    padding-bottom: 211px;
+}
+
+.title h1 {
+    font-weight: 700;
+}
+
+.title h2 {
+    font-weight: 500;
+}
+
+button{
+    padding: 18px 25px 18px 25px;
+    margin: 0 0 0 24px;
+    background-image: linear-gradient(to bottom right, #F76B1C, #FAD961);
+    border-radius: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+.container_extra{
+    background-color: #EEEEEE;
+    display: block;
+    padding: 30px 0 30px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.container_extra p{
+    color: #4A4A4A;
+    opacity: 0.85;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+}
+
+.inline {
+    display: inline-flex;
+    align-items: center;
+    box-align: center;
+}
+
+.container_services{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    text-align: center;
+    margin: 74px 108px;
+    padding-bottom: 24px;
+}
+
+.service {
+    padding: 0 24px 0 24px;
+    display: inline-flexbox;
+    align-items: center;
+}
+
+.icon_service{
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    padding: 24px;
+    display: inline-flex;
+    align-items: center;
+    box-align: center;
+}
+
+.icon{
+    padding-right: 13px;
+}
+
+.line {
+    border: 3px solid #205796;
+    border-radius:6px;
+    width: 40px;
+    align-content: center;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.card_tertimonial{
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.30);
+    border-radius: 18px;
+    width: 750px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.card_tertimonial h3{
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.testimonial_quote{
+    display: inline-flex;
+    letter-spacing: 1px;
+    color: #4A4A4A;
+    padding-bottom: 40px;
+
+}
+
+.testimonial_person{
+    position: relative;
+    left: 36px;
+    display: inline-flex;
+    align-items: center;
+    box-align: center;
+    letter-spacing: 1px;
+}
+.quote{
+    padding-right: 32px;
+}
+.charge {
+    color: #9B9B9B;
+    font-weight: 800;
+}
+
+.name{
+    color: #4A4A4A;
+    font-weight: 800;
+}
+
+.block{
+    display: block;
+}
+
+.pagination{
+    text-align: center;
+    padding: 40px 0 40px 0;
+}
+
+.selected{
+    color: #9B9B9B
+}
+
+.unselected{
+    color: #E1E1E1
+}
+
+.cta{
+    padding: 40px 0 40px 0;
+    text-align: center;
+}
+
+footer{
+    background-color: #E1DDDD;
+    padding: 47px 0;
+    text-align: center;
+}
+
+footer p{
+    color: #4A4A4A;
+    opacity: 0.85;
 }
